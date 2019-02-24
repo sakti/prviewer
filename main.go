@@ -20,6 +20,8 @@ var (
 	entrySummary *ui.MultilineEntry
 
 	entryLog *ui.MultilineEntry
+
+	Version = "v0.1.0"
 )
 
 func updateLogger() {
@@ -43,7 +45,7 @@ func setupUI() {
 	lblStatus = ui.NewLabel("status")
 	entrySummary = ui.NewMultilineEntry()
 
-	winMain = ui.NewWindow("PR Summary", windowWidth, windowHeight, true)
+	winMain = ui.NewWindow("PR Viewer "+Version, windowWidth, windowHeight, true)
 	winMain.SetMargined(true)
 
 	winMain.OnClosing(func(*ui.Window) bool {
