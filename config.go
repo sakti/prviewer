@@ -31,7 +31,7 @@ func (c *Config) String() string {
 }
 
 var (
-	configDirs = configdir.New("github.com:sakti", "prviewer")
+	configDirs = configdir.New("sakti.github.com", "prviewer")
 )
 
 func GithubToken() string {
